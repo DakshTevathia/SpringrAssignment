@@ -1,38 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-container {
+    padding: 20px;
+    width: auto;
+    margin: auto;
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    /* justify-items: center; */
+    justify-content: space-around;
+    /* border-top: 1px black solid; */
+    /* border-bottom: 2px black solid; */
+    /* background-color: royalblue; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-container-btn {
+    margin: 1rem;
+    justify-content: space-evenly;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dialogTitle {
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-item {
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    /* border: 2px white solid; */
+    border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.flex-item-btn {
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+}
+
+.addNewRecordsGridContainer {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    display: grid;
+}
+
+.inputRecordsGridContainer {
+    /* justify-items: stretch; */
+    align-items: center;
+    grid-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 20px;
+    grid-auto-rows: 2rem;
+}
+
+.inputRecordGridItemLabel {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.inputRecordGridItemLabelStillWorking {
+    grid-column-start: 5;
+    justify-self: end;
+    grid-column-end: 7;
+}
+
+.inputRecordGridItemValuLeaving {
+    grid-column-end: 5;
+    grid-column-start: 3;
+}
+
+.inputRecordGridItemValueStillWorking {
+    grid-column: 7/8;
+    justify-self: center;
+}
+
+.inputRecordGridItemValue {
+    grid-column-start: 3;
+    grid-column-end: 8;
+
+}
+
+.flexAddNewRecords div {
+    margin-top: 10px;
+}
+
+.flexAddNewRecords div h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-box-butons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    /* width: 150px; */
+}
+
+.flex-item-button {
+    margin: 8px;
+}
+
+.imageFormatting {
+    max-width: 85%;
+    object-fit: contain;
+}
+
+.initialContainerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
